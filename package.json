@@ -5,15 +5,9 @@
     "url": "http://gajus.com"
   },
   "ava": {
-    "extensions": [
-      "ts"
-    ],
-    "files": [
-      "test/liqe/**/*"
-    ],
-    "require": [
-      "ts-node/register/transpile-only"
-    ]
+    "extensions": ["ts"],
+    "files": ["test/liqe/**/*"],
+    "require": ["ts-node/register/transpile-only"]
   },
   "dependencies": {
     "nearley": "^2.20.1",
@@ -45,12 +39,10 @@
   "engines": {
     "node": ">=12.0"
   },
-  "keywords": [
-    "lucene"
-  ],
+  "keywords": ["lucene"],
   "license": "BSD-3-Clause",
   "main": "./dist/src/Liqe.js",
-  "name": "liqe",
+  "name": "@helvia/liqe",
   "repository": {
     "type": "git",
     "url": "git@github.com:gajus/liqe.git"
@@ -68,5 +60,8 @@
     "test": "NODE_ENV=test ava --serial --verbose"
   },
   "typings": "./dist/src/Liqe.d.ts",
-  "version": "1.0.0"
+  "version": "1.0.1",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
