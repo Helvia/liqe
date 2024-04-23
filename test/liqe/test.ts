@@ -19,3 +19,17 @@ test('returns false if subject does not match the query', (t) => {
     name: 'david',
   }));
 });
+
+test('returns true if subject match partially the query', (t) => {
+  t.true(liqeTest(parse('name:dav'), {
+    height: 180,
+    name: 'david',
+  }));
+});
+
+test('returns false if query is not strictly equal', (t) => {
+  t.false(liqeTest(parse('name:=dav'), {
+    height: 180,
+    name: 'david',
+  }));
+});
