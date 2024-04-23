@@ -432,3 +432,9 @@ Before making any changes, capture the current benchmark on your machine using `
 ## Tutorials
 
 * [Building advanced SQL search from a user text input](https://contra.com/p/WobOBob7-building-advanced-sql-search-from-a-user-text-input)
+
+### Helvia-Specific Changes
+
+In this fork, we made these changes to address our specific needs:
+
+1. Allow to `:=` to work with non-numeric values. In that case, it will be treated as a strict string comparison. For exmple, while `foo:dav` will  match `foo:david` or `foo:dave`, `foo:=dav` will only match `foo:dav`.
