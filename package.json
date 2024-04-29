@@ -45,7 +45,7 @@
   "name": "@helvia/liqe",
   "repository": {
     "type": "git",
-    "url": "git@github.com:gajus/liqe.git"
+    "url": "git@github.com:Helvia/liqe.git"
   },
   "watch": {
     "compile-parser": "src/grammar.ne"
@@ -60,7 +60,7 @@
     "test": "NODE_ENV=test ava --serial --verbose"
   },
   "typings": "./dist/src/Liqe.d.ts",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   }
